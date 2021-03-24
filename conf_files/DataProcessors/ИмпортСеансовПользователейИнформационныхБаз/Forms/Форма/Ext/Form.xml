@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ТаблицаИмпортаПрочитатьФайлы" id="41">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПрочитатьФайлы</CommandName>
+				<ExtendedTooltip name="ТаблицаИмпортаПрочитатьФайлыРасширеннаяПодсказка" id="42"/>
+			</Button>
+			<Button name="ФормаИмпортировать" id="93">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Импортировать</CommandName>
+				<ExtendedTooltip name="ФормаИмпортироватьРасширеннаяПодсказка" id="94"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="КаталогФайловИмпорта" id="1">
+			<DataPath>Объект.КаталогФайловИмпорта</DataPath>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ChoiceButton>true</ChoiceButton>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="КаталогФайловИмпортаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КаталогФайловИмпортаРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="StartChoice">КаталогФайловИмпортаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<Table name="ТаблицаИмпорта" id="4">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТаблицаИмпорта</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаИмпортаКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ТаблицаИмпортаКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаИмпортаРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ТаблицаИмпортаСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ТаблицаИмпорта</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаИмпортаСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаИмпортаСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаИмпортаСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ТаблицаИмпорта</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаИмпортаСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаИмпортаСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаИмпортаУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ТаблицаИмпорта</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаИмпортаУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТаблицаИмпортаУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТаблицаИмпортаНомерСтроки" id="43">
+					<DataPath>Объект.ТаблицаИмпорта.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаИмпортаНомерСтрокиКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ТаблицаИмпортаНомерСтрокиРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+				<InputField name="ТаблицаИмпортаНомерСессии" id="46">
+					<DataPath>Объект.ТаблицаИмпорта.НомерСессии</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>N сессии</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаИмпортаНомерСессииКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ТаблицаИмпортаНомерСессииРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ТаблицаИмпортаДата" id="49">
+					<DataPath>Объект.ТаблицаИмпорта.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаИмпортаДатаКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ТаблицаИмпортаДатаРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<ColumnGroup name="ТаблицаИмпортаГруппа1" id="79">
+					<ExtendedTooltip name="ТаблицаИмпортаГруппа1РасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<InputField name="ТаблицаИмпортаСерверОбозначение" id="55">
+							<DataPath>Объект.ТаблицаИмпорта.СерверОбозначение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>id севрера</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаИмпортаСерверОбозначениеКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ТаблицаИмпортаСерверОбозначениеРасширеннаяПодсказка" id="57"/>
+						</InputField>
+						<InputField name="ТаблицаИмпортаСервер" id="52">
+							<DataPath>Объект.ТаблицаИмпорта.Сервер</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаИмпортаСерверКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ТаблицаИмпортаСерверРасширеннаяПодсказка" id="54"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ТаблицаИмпортаГруппа2" id="81">
+					<ExtendedTooltip name="ТаблицаИмпортаГруппа2РасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<ColumnGroup name="ТаблицаИмпортаГруппа4" id="91">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ТаблицаИмпортаГруппа4РасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<InputField name="ТаблицаИмпортаСерверныйИдентификаторПартнера" id="85">
+									<DataPath>Объект.ТаблицаИмпорта.СерверныйИдентификаторПартнера</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>id партнера</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаИмпортаСерверныйИдентификаторПартнераКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="ТаблицаИмпортаСерверныйИдентификаторПартнераРасширеннаяПодсказка" id="87"/>
+								</InputField>
+								<InputField name="ТаблицаИмпортаИнформационнаяБазаОбозначение" id="88">
+									<DataPath>Объект.ТаблицаИмпорта.ИнформационнаяБазаОбозначение</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>id базы</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаИмпортаИнформационнаяБазаОбозначениеКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ТаблицаИмпортаИнформационнаяБазаОбозначениеРасширеннаяПодсказка" id="90"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ТаблицаИмпортаИнформационнаяБаза" id="58">
+							<DataPath>Объект.ТаблицаИмпорта.ИнформационнаяБаза</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаИмпортаИнформационнаяБазаКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ТаблицаИмпортаИнформационнаяБазаРасширеннаяПодсказка" id="60"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ТаблицаИмпортаИмяПользователя" id="64">
+					<DataPath>Объект.ТаблицаИмпорта.ИмяПользователя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаИмпортаИмяПользователяКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ТаблицаИмпортаИмяПользователяРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<ColumnGroup name="ТаблицаИмпортаГруппа3" id="83">
+					<ExtendedTooltip name="ТаблицаИмпортаГруппа3РасширеннаяПодсказка" id="84"/>
+					<ChildItems>
+						<InputField name="ТаблицаИмпортаПриложение1СОбозначение" id="70">
+							<DataPath>1/0:4e9b3d32-83bd-11ea-1985-e02a82578605/0:60752084-83cf-11ea-1985-e02a82578605</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>id приложения</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаИмпортаПриложение1СОбозначениеКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ТаблицаИмпортаПриложение1СОбозначениеРасширеннаяПодсказка" id="72"/>
+						</InputField>
+						<InputField name="ТаблицаИмпортаПриложение1С" id="67">
+							<DataPath>Объект.ТаблицаИмпорта.Приложение1С</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаИмпортаПриложение1СКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ТаблицаИмпортаПриложение1СРасширеннаяПодсказка" id="69"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ТаблицаИмпортаНачалоСеанса" id="73">
+					<DataPath>Объект.ТаблицаИмпорта.НачалоСеанса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаИмпортаНачалоСеансаКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ТаблицаИмпортаНачалоСеансаРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="ТаблицаИмпортаКонецСеанса" id="76">
+					<DataPath>Объект.ТаблицаИмпорта.КонецСеанса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаИмпортаКонецСеансаКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ТаблицаИмпортаКонецСеансаРасширеннаяПодсказка" id="78"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИмпортСеансовПользователейИнформационныхБаз</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.КаталогФайловИмпорта</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьФайлы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьФайлы</Action>
+		</Command>
+		<Command name="Импортировать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Импортировать</Action>
+		</Command>
+	</Commands>
+</Form>

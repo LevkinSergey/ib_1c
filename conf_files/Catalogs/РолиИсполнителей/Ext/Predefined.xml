@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="7867b46d-b01b-4533-bb49-170b54646753">
+		<Name>ОтветственныйЗаКонтрольИсполнения</Name>
+		<Code>000000001</Code>
+		<Description>Координатор выполнения задач</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="eec0033a-3dd0-11ea-eb8c-e02a82578605">
+		<Name>Оператор</Name>
+		<Code>000000003</Code>
+		<Description>Оператор</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="09241a44-3dd2-11ea-eb8c-e02a82578605">
+		<Name>РуководительОтделаТехническойПоддаржки</Name>
+		<Code>000000004</Code>
+		<Description>Руководитель отдела технической поддаржки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0a795a9a-3dc2-11ea-eb8c-e02a82578605">
+		<Name>СпециалистТехническойПоддержки</Name>
+		<Code>000000002</Code>
+		<Description>Специалист технической поддержки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
